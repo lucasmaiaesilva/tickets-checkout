@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TicketDescription from '../TicketDescription';
 import './index.css';
 
 class Card extends Component {
@@ -22,9 +23,7 @@ class Card extends Component {
             </select>
           </div>
         </div>
-        <div className="description">
-          Mostrar Descrição
-        </div>
+        <TicketDescription text="lorem ipsum kajshkahsdkjahsd"  />
       </div> 
     );
   }

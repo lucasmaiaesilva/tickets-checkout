@@ -1,0 +1,26 @@
+.card .description {
+  padding: 10px;
+  border-top: 1px solid #d1d5da;
+}
+
+.card .description button {
+  color: rgb(138, 163, 187);
+  font-size: .9rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.card .description button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card .description p {
+  font-size: .9rem;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
