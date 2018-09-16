@@ -1,6 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .App {
   font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 550px;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 734px) {
+  .App {
+    width: 880px;
+    margin: 0 auto;
+  }
 }
 
