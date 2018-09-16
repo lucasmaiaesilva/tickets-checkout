@@ -28,4 +28,9 @@
    width: 74px;
   outline: none;
 }
+.select select[disabled] {
+  cursor: not-allowed;
+  background-image: none;
+  background-color: rgba(0, 0, 0, .2);
+}
 
