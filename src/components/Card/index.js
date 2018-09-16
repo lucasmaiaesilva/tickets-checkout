@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import TicketDescription from '../TicketDescription';
+import Select from '../Select';
+
 import './index.css';
 
 class Card extends Component {
@@ -14,14 +16,7 @@ class Card extends Component {
               <span>(+ R$ 89,90 em taxas)</span>
             </p>
           </div>
-          <div className="select">
-            <select>
-              <option value="">-</option>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
-          </div>
+          <Select />
         </div>
         <TicketDescription text="lorem ipsum kajshkahsdkjahsd"  />
       </div> 
