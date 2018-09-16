@@ -1,0 +1,19 @@
+.total-info {
+  margin-top: 14px;
+}
+
+.total-info .title-text {
+  margin: 0;
+}
+
+.total-info .extra-info {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 734px) {
+  .total-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from './components/Card';
-import TotalText from './components/TotalText';
+import TitleText from './components/TitleText';
+import TotalInfo from './components/TotalInfo';
 
 import './App.css';
 
@@ -8,8 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TotalText title="Selecionar ingressos" /> 
+        <TitleText>Selecionar ingressos</TitleText> 
         <Card />
+        <TotalInfo />
       </div>
     );
   }
