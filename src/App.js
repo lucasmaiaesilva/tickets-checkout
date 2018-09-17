@@ -11,7 +11,11 @@ class App extends Component {
       <div className="App">
         <TitleText>Selecionar ingressos</TitleText> 
         <Card />
-        <TotalInfo />
+        <TotalInfo
+          title="Total sem desconto"
+          price="1.089, 90"
+          extra="em até 12x"
+        />
       </div>
     );
   }

@@ -18,7 +18,9 @@ class TicketDescription extends Component {
   render() {
     return (
       <div className="description">
-        <button onClick={this.toggleMessage}>Mostrar Descrição</button>
+        <button onClick={this.toggleMessage}>
+          {this.state.isOpened ? 'Ocultar Descrição' : 'Mostrar Descrição'}
+        </button>
         {this.state.isOpened && <p>{ this.props.text }</p>}
       </div>
     );

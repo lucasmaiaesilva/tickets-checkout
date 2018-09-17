@@ -15,6 +15,11 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
+  "collectCoverageFrom": [
+    "src/**/*.{js}",
+    "!src/setupTests.js",
+    "!src/registerServiceWorker.js"
+  ],
   "devDependencies": {
     "@storybook/react": "^3.4.10",
     "enzyme": "^3.6.0",

@@ -3,12 +3,12 @@ import TitleText from '../TitleText';
 
 import './index.css';
 
-const TotalInfo = () => (
+const TotalInfo = ({ title, price, extra }) => (
   <div className="total-info">
-    <TitleText>Total sem desconto</TitleText>
+    <TitleText>{ title }</TitleText>
     <div>
-      <TitleText>R$ 1.089, 90</TitleText>
-      <div className="extra-info">em até 12x</div>
+      <TitleText>{ price }</TitleText>
+      {extra && <div className="extra-info">{ extra }</div>}
     </div>
   </div>
 );
