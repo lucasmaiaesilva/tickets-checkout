@@ -12,7 +12,7 @@ class Card extends Component {
           <div className="block">
             <p>Royal - lote {this.props.number}</p>
             <p className="price">
-              <span>R$ {this.props.price.toFixed(2).replace('.', ',')}</span>
+              <span>R$ {(this.props.price / 100).toFixed(2).replace('.', ',')}</span>
               <span>(+ R$ 89,90 em taxas)</span>
             </p>
           </div>
@@ -21,6 +21,7 @@ class Card extends Component {
             handleChange={this.props.handleChange}
             ticketId={this.props.id}
             price={this.props.price}
+            disabled={!this.props.isActive}
           />
         </div>
         <TicketDescription text={this.props.description}  />

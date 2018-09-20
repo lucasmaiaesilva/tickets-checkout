@@ -46,7 +46,6 @@ class App extends Component {
       <div className="App">
         <TitleText>Selecionar ingressos</TitleText> 
         {tickets.nodes.map(type => {
-          console.log(type.batches[0]);
           return type.batches.map(ticket => (
             <Card
               key={ticket.id}
@@ -56,12 +55,13 @@ class App extends Component {
               price={ticket.price}
               quantities={ticket.purchaseable_quantities}
               handleChange={this.handleSelect}
+              isActive={ticket.number === 1}
             />
           ));  
         })}
         <TotalInfo
           title="Total sem desconto"
-          price={`R$ ${Number(totalValue).toFixed(2)}`}
+          price={`R$ ${Number(totalValue / 100).toFixed(2)}`}
           extra="em até 12x"
         />
         <Button>
