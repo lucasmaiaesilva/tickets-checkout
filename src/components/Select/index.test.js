@@ -23,5 +23,9 @@ describe('[Component] Button', () => {
     wrapper.find('select').simulate('change');
     expect(props.handleChange).toHaveBeenCalled();
   });
+  it('render all quantities options', () => {
+    const wrapper = shallow(<Select {...props} />);
+    expect(wrapper.find('option')).toHaveLength(5);
+  });
 });
 
