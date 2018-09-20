@@ -1,0 +1,1076 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Card render Active card 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    description="hello world"
+    discount={1}
+    handleChange={[Function]}
+    id="asd"
+    number={1}
+    price={1000}
+    quantities={
+        Array [
+            1,
+            2,
+            3,
+          ]
+    }
+    taxes={1}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="detail"
+>
+          <div
+                    className="block"
+          >
+                    <p>
+                              Royal - lote 
+                              1
+                    </p>
+                    <p
+                              className="price"
+                    >
+                              <span>
+                                        R$ 
+                                        10,00
+                              </span>
+                              <span>
+                                        (+ R$ 
+                                        0.01
+                                         em taxas)
+                              </span>
+                    </p>
+          </div>
+          <Select
+                    disabled={true}
+                    discount={1}
+                    handleChange={[Function]}
+                    price={1000}
+                    quantities={
+                              Array [
+                                        1,
+                                        2,
+                                        3,
+                                      ]
+                    }
+                    ticketId="asd"
+          />
+</div>,
+        <TicketDescription
+          text="hello world"
+/>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="block"
+>
+              <p>
+                            Royal - lote 
+                            1
+              </p>
+              <p
+                            className="price"
+              >
+                            <span>
+                                          R$ 
+                                          10,00
+                            </span>
+                            <span>
+                                          (+ R$ 
+                                          0.01
+                                           em taxas)
+                            </span>
+              </p>
+</div>,
+            <Select
+              disabled={true}
+              discount={1}
+              handleChange={[Function]}
+              price={1000}
+              quantities={
+                            Array [
+                                          1,
+                                          2,
+                                          3,
+                                        ]
+              }
+              ticketId="asd"
+/>,
+          ],
+          "className": "detail",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Royal - lote 
+                  1
+</p>,
+                <p
+                  className="price"
+>
+                  <span>
+                                    R$ 
+                                    10,00
+                  </span>
+                  <span>
+                                    (+ R$ 
+                                    0.01
+                                     em taxas)
+                  </span>
+</p>,
+              ],
+              "className": "block",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Royal - lote ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Royal - lote ",
+                  1,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                      R$ 
+                      10,00
+</span>,
+                    <span>
+                      (+ R$ 
+                      0.01
+                       em taxas)
+</span>,
+                  ],
+                  "className": "price",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "R$ ",
+                        "10,00",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "R$ ",
+                      "10,00",
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "(+ R$ ",
+                        "0.01",
+                        " em taxas)",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "(+ R$ ",
+                      "0.01",
+                      " em taxas)",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "disabled": true,
+              "discount": 1,
+              "handleChange": [Function],
+              "price": 1000,
+              "quantities": Array [
+                1,
+                2,
+                3,
+              ],
+              "ticketId": "asd",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "text": "hello world",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="detail"
+>
+            <div
+                        className="block"
+            >
+                        <p>
+                                    Royal - lote 
+                                    1
+                        </p>
+                        <p
+                                    className="price"
+                        >
+                                    <span>
+                                                R$ 
+                                                10,00
+                                    </span>
+                                    <span>
+                                                (+ R$ 
+                                                0.01
+                                                 em taxas)
+                                    </span>
+                        </p>
+            </div>
+            <Select
+                        disabled={true}
+                        discount={1}
+                        handleChange={[Function]}
+                        price={1000}
+                        quantities={
+                                    Array [
+                                                1,
+                                                2,
+                                                3,
+                                              ]
+                        }
+                        ticketId="asd"
+            />
+</div>,
+          <TicketDescription
+            text="hello world"
+/>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="block"
+>
+                <p>
+                                Royal - lote 
+                                1
+                </p>
+                <p
+                                className="price"
+                >
+                                <span>
+                                                R$ 
+                                                10,00
+                                </span>
+                                <span>
+                                                (+ R$ 
+                                                0.01
+                                                 em taxas)
+                                </span>
+                </p>
+</div>,
+              <Select
+                disabled={true}
+                discount={1}
+                handleChange={[Function]}
+                price={1000}
+                quantities={
+                                Array [
+                                                1,
+                                                2,
+                                                3,
+                                              ]
+                }
+                ticketId="asd"
+/>,
+            ],
+            "className": "detail",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Royal - lote 
+                    1
+</p>,
+                  <p
+                    className="price"
+>
+                    <span>
+                                        R$ 
+                                        10,00
+                    </span>
+                    <span>
+                                        (+ R$ 
+                                        0.01
+                                         em taxas)
+                    </span>
+</p>,
+                ],
+                "className": "block",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Royal - lote ",
+                      1,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Royal - lote ",
+                    1,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        R$ 
+                        10,00
+</span>,
+                      <span>
+                        (+ R$ 
+                        0.01
+                         em taxas)
+</span>,
+                    ],
+                    "className": "price",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "R$ ",
+                          "10,00",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "R$ ",
+                        "10,00",
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "(+ R$ ",
+                          "0.01",
+                          " em taxas)",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "(+ R$ ",
+                        "0.01",
+                        " em taxas)",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "discount": 1,
+                "handleChange": [Function],
+                "price": 1000,
+                "quantities": Array [
+                  1,
+                  2,
+                  3,
+                ],
+                "ticketId": "asd",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "text": "hello world",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`[Component] Card render inactive 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    description="hello world"
+    disabled={true}
+    discount={1}
+    handleChange={[Function]}
+    id="asd"
+    number={1}
+    price={1000}
+    quantities={
+        Array [
+            1,
+            2,
+            3,
+          ]
+    }
+    taxes={1}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="detail"
+>
+          <div
+                    className="block"
+          >
+                    <p>
+                              Royal - lote 
+                              1
+                    </p>
+                    <p
+                              className="price"
+                    >
+                              <span>
+                                        R$ 
+                                        10,00
+                              </span>
+                              <span>
+                                        (+ R$ 
+                                        0.01
+                                         em taxas)
+                              </span>
+                    </p>
+          </div>
+          <Select
+                    disabled={true}
+                    discount={1}
+                    handleChange={[Function]}
+                    price={1000}
+                    quantities={
+                              Array [
+                                        1,
+                                        2,
+                                        3,
+                                      ]
+                    }
+                    ticketId="asd"
+          />
+</div>,
+        <TicketDescription
+          text="hello world"
+/>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="block"
+>
+              <p>
+                            Royal - lote 
+                            1
+              </p>
+              <p
+                            className="price"
+              >
+                            <span>
+                                          R$ 
+                                          10,00
+                            </span>
+                            <span>
+                                          (+ R$ 
+                                          0.01
+                                           em taxas)
+                            </span>
+              </p>
+</div>,
+            <Select
+              disabled={true}
+              discount={1}
+              handleChange={[Function]}
+              price={1000}
+              quantities={
+                            Array [
+                                          1,
+                                          2,
+                                          3,
+                                        ]
+              }
+              ticketId="asd"
+/>,
+          ],
+          "className": "detail",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Royal - lote 
+                  1
+</p>,
+                <p
+                  className="price"
+>
+                  <span>
+                                    R$ 
+                                    10,00
+                  </span>
+                  <span>
+                                    (+ R$ 
+                                    0.01
+                                     em taxas)
+                  </span>
+</p>,
+              ],
+              "className": "block",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Royal - lote ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Royal - lote ",
+                  1,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                      R$ 
+                      10,00
+</span>,
+                    <span>
+                      (+ R$ 
+                      0.01
+                       em taxas)
+</span>,
+                  ],
+                  "className": "price",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "R$ ",
+                        "10,00",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "R$ ",
+                      "10,00",
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "(+ R$ ",
+                        "0.01",
+                        " em taxas)",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "(+ R$ ",
+                      "0.01",
+                      " em taxas)",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "disabled": true,
+              "discount": 1,
+              "handleChange": [Function],
+              "price": 1000,
+              "quantities": Array [
+                1,
+                2,
+                3,
+              ],
+              "ticketId": "asd",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "text": "hello world",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="detail"
+>
+            <div
+                        className="block"
+            >
+                        <p>
+                                    Royal - lote 
+                                    1
+                        </p>
+                        <p
+                                    className="price"
+                        >
+                                    <span>
+                                                R$ 
+                                                10,00
+                                    </span>
+                                    <span>
+                                                (+ R$ 
+                                                0.01
+                                                 em taxas)
+                                    </span>
+                        </p>
+            </div>
+            <Select
+                        disabled={true}
+                        discount={1}
+                        handleChange={[Function]}
+                        price={1000}
+                        quantities={
+                                    Array [
+                                                1,
+                                                2,
+                                                3,
+                                              ]
+                        }
+                        ticketId="asd"
+            />
+</div>,
+          <TicketDescription
+            text="hello world"
+/>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="block"
+>
+                <p>
+                                Royal - lote 
+                                1
+                </p>
+                <p
+                                className="price"
+                >
+                                <span>
+                                                R$ 
+                                                10,00
+                                </span>
+                                <span>
+                                                (+ R$ 
+                                                0.01
+                                                 em taxas)
+                                </span>
+                </p>
+</div>,
+              <Select
+                disabled={true}
+                discount={1}
+                handleChange={[Function]}
+                price={1000}
+                quantities={
+                                Array [
+                                                1,
+                                                2,
+                                                3,
+                                              ]
+                }
+                ticketId="asd"
+/>,
+            ],
+            "className": "detail",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Royal - lote 
+                    1
+</p>,
+                  <p
+                    className="price"
+>
+                    <span>
+                                        R$ 
+                                        10,00
+                    </span>
+                    <span>
+                                        (+ R$ 
+                                        0.01
+                                         em taxas)
+                    </span>
+</p>,
+                ],
+                "className": "block",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Royal - lote ",
+                      1,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Royal - lote ",
+                    1,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        R$ 
+                        10,00
+</span>,
+                      <span>
+                        (+ R$ 
+                        0.01
+                         em taxas)
+</span>,
+                    ],
+                    "className": "price",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "R$ ",
+                          "10,00",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "R$ ",
+                        "10,00",
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "(+ R$ ",
+                          "0.01",
+                          " em taxas)",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "(+ R$ ",
+                        "0.01",
+                        " em taxas)",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "discount": 1,
+                "handleChange": [Function],
+                "price": 1000,
+                "quantities": Array [
+                  1,
+                  2,
+                  3,
+                ],
+                "ticketId": "asd",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "text": "hello world",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
