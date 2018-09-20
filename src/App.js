@@ -9,17 +9,59 @@ import gql from 'graphql-tag';
 import './App.css';
 
 class App extends Component {
-  componentWillReceiveProps(nextProps) {
-    console.log(nextProps); 
+  constructor() {
+    super();
+    this.state = {
+      tickets: [],
+      isLoading: true,
+      checkouts: {},
+    };
+    this.handleSelect = this.handleSelect.bind(this);
+  }
+  componentWillReceiveProps({ data }) {
+    const { event_offer } = data;
+    const tickets = event_offer.ticket_offers;
+    this.setState({
+      tickets: tickets,  
+      isLoading: false
+    })
+  }
+  handleSelect(price, id, e) {
+    const quantity = e.target.value;
+    this.setState(prevState => ({
+      checkouts: {
+        ...prevState.checkouts,
+        [id]: price * quantity
+      }
+    }))
   }
   render() {
+    const { tickets, isLoading } = this.state;
+    const totalValues = Object.keys(this.state.checkouts).map(item => this.state.checkouts[item]);
+    const totalValue = totalValues.reduce((acc, act) => Number(acc + act), [0]);
+    if (isLoading) {
+      return <h1>Loading ...</h1>;
+    }
     return (
       <div className="App">
         <TitleText>Selecionar ingressos</TitleText> 
-        <Card />
+        {tickets.nodes.map(type => {
+          console.log(type.batches[0]);
+          return type.batches.map(ticket => (
+            <Card
+              key={ticket.id}
+              id={ticket.id}
+              description={type.description}
+              number={ticket.number}
+              price={ticket.price}
+              quantities={ticket.purchaseable_quantities}
+              handleChange={this.handleSelect}
+            />
+          ));  
+        })}
         <TotalInfo
           title="Total sem desconto"
-          price="1.089, 90"
+          price={`R$ ${Number(totalValue).toFixed(2)}`}
           extra="em até 12x"
         />
         <Button>

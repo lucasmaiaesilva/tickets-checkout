@@ -2,16 +2,20 @@ import React from 'react';
 
 import './index.css';
 
-const Select = () => (
+const Select = ({ quantities, ticketId, disabled, handleChange, price }) => (
   <div className="select">
-    <select disabled>
-      <option value="">-</option>
-      <option value="">1</option>
-      <option value="">2</option>
-      <option value="">3</option>
+    <select disabled={disabled} onChange={(e) => handleChange(price, ticketId, e)}>
+      <option value={1}>-</option>
+      {quantities.map(item => (
+        <option key={item} value={item}>{item}</option>
+      ))}
     </select>
   </div>
 );
+
+Select.defaultProps = {
+  disabled: false 
+};
 
 export default Select;
 

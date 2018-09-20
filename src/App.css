@@ -16,6 +16,7 @@ body {
   .App {
     width: 880px;
     margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
 

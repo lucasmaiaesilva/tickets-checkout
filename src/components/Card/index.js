@@ -10,15 +10,20 @@ class Card extends Component {
       <div className="card">
         <div className="detail">
           <div className="block">
-            <p>Royal - lote 1</p>
+            <p>Royal - lote {this.props.number}</p>
             <p className="price">
-              <span>R$ 1.000,00</span>
+              <span>R$ {this.props.price.toFixed(2).replace('.', ',')}</span>
               <span>(+ R$ 89,90 em taxas)</span>
             </p>
           </div>
-          <Select />
+          <Select
+            quantities={this.props.quantities}
+            handleChange={this.props.handleChange}
+            ticketId={this.props.id}
+            price={this.props.price}
+          />
         </div>
-        <TicketDescription text="lorem ipsum kajshkahsdkjahsd"  />
+        <TicketDescription text={this.props.description}  />
       </div> 
     );
   }

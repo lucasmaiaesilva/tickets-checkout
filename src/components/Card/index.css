@@ -3,6 +3,7 @@
   border: 1px solid #d1d5da;
   border-radius: 3px;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  margin-bottom: 8px;
 }
 
 .card .detail {
