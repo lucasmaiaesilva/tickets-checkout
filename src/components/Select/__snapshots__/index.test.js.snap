@@ -36,7 +36,7 @@ ShallowWrapper {
         onChange={[Function]}
 >
         <option
-                value={1}
+                value={0}
         >
                 -
         </option>
@@ -71,7 +71,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <option
-            value={1}
+            value={0}
 >
             -
 </option>,
@@ -109,7 +109,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "-",
-            "value": 1,
+            "value": 0,
           },
           "ref": null,
           "rendered": "-",
@@ -179,7 +179,7 @@ ShallowWrapper {
           onChange={[Function]}
 >
           <option
-                    value={1}
+                    value={0}
           >
                     -
           </option>
@@ -214,7 +214,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value={1}
+              value={0}
 >
               -
 </option>,
@@ -252,7 +252,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "-",
-              "value": 1,
+              "value": 0,
             },
             "ref": null,
             "rendered": "-",
@@ -370,7 +370,7 @@ ShallowWrapper {
         onChange={[Function]}
 >
         <option
-                value={1}
+                value={0}
         >
                 -
         </option>
@@ -405,7 +405,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <option
-            value={1}
+            value={0}
 >
             -
 </option>,
@@ -443,7 +443,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "-",
-            "value": 1,
+            "value": 0,
           },
           "ref": null,
           "rendered": "-",
@@ -513,7 +513,7 @@ ShallowWrapper {
           onChange={[Function]}
 >
           <option
-                    value={1}
+                    value={0}
           >
                     -
           </option>
@@ -548,7 +548,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value={1}
+              value={0}
 >
               -
 </option>,
@@ -586,7 +586,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "-",
-              "value": 1,
+              "value": 0,
             },
             "ref": null,
             "rendered": "-",
