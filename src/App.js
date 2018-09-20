@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from './components/Card';
 import TitleText from './components/TitleText';
 import TotalInfo from './components/TotalInfo';
+import Button from './components/Button';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
@@ -21,6 +22,9 @@ class App extends Component {
           price="1.089, 90"
           extra="em até 12x"
         />
+        <Button>
+          Confirmar Compra
+        </Button>
       </div>
     );
   }

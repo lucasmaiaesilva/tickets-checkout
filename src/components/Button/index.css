@@ -1,0 +1,30 @@
+.button-wrapper {
+  margin-top: 1rem;
+}
+
+.button-wrapper button {
+  width: 100%;
+  background-color: rgb(68, 142, 96);
+  font-size: 1rem;
+  font-size: .9rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.button-wrapper button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 734px) {
+  .button-wrapper {
+    display: flex;
+  }
+  .button-wrapper button {
+    width: 200px;
+    margin: auto;
+  }
+}
+
