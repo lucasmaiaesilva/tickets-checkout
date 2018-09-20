@@ -18,5 +18,10 @@ describe('[Component] Button', () => {
     const wrapper = shallow(<Select {...props} disabled />);
     expect(wrapper).toMatchSnapshot();
   });
+  it('test handleChange callback', () => {
+    const wrapper = mount(<Select {...props} />);
+    wrapper.find('select').simulate('change');
+    expect(props.handleChange).toHaveBeenCalled();
+  });
 });
 
