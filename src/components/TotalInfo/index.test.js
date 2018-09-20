@@ -16,4 +16,8 @@ describe('[Component] TotalInfo', () => {
     const wrapper = shallow(<TotalInfo {...commomProps} />);
     expect(wrapper).toMatchSnapshot();
   });
+  it('render correctly with discount flag', () => {
+    const wrapper = shallow(<TotalInfo {...commomProps} withDiscount />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

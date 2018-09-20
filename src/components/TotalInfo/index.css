@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.total-info.discount .title-text {
+  color: tomato;
+}
+
 .total-info .extra-info {
   color: #777;
   font-size: 0.8rem;

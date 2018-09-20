@@ -1,5 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`[Component] TotalInfo render correctly with discount flag 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TotalInfo
+    price="1.000,00"
+    title="Example of title"
+    withDiscount={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <TitleText>
+          Example of title
+</TitleText>,
+        <div>
+          <TitleText>
+                    1.000,00
+          </TitleText>
+</div>,
+      ],
+      "className": "total-info discount",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Example of title",
+        },
+        "ref": null,
+        "rendered": "Example of title",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <TitleText>
+              1.000,00
+</TitleText>,
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "1.000,00",
+            },
+            "ref": null,
+            "rendered": "1.000,00",
+            "type": [Function],
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <TitleText>
+            Example of title
+</TitleText>,
+          <div>
+            <TitleText>
+                        1.000,00
+            </TitleText>
+</div>,
+        ],
+        "className": "total-info discount",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Example of title",
+          },
+          "ref": null,
+          "rendered": "Example of title",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TitleText>
+                1.000,00
+</TitleText>,
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "1.000,00",
+              },
+              "ref": null,
+              "rendered": "1.000,00",
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
 exports[`[Component] TotalInfo render correctly with whole props 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
@@ -36,7 +200,7 @@ ShallowWrapper {
           </div>
 </div>,
       ],
-      "className": "total-info",
+      "className": "total-info false",
     },
     "ref": null,
     "rendered": Array [
@@ -119,7 +283,7 @@ ShallowWrapper {
             </div>
 </div>,
         ],
-        "className": "total-info",
+        "className": "total-info false",
       },
       "ref": null,
       "rendered": Array [
@@ -234,7 +398,7 @@ ShallowWrapper {
           </TitleText>
 </div>,
       ],
-      "className": "total-info",
+      "className": "total-info false",
     },
     "ref": null,
     "rendered": Array [
@@ -297,7 +461,7 @@ ShallowWrapper {
             </TitleText>
 </div>,
         ],
-        "className": "total-info",
+        "className": "total-info false",
       },
       "ref": null,
       "rendered": Array [

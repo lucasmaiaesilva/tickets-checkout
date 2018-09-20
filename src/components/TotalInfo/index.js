@@ -3,8 +3,8 @@ import TitleText from '../TitleText';
 
 import './index.css';
 
-const TotalInfo = ({ title, price, extra }) => (
-  <div className="total-info">
+const TotalInfo = ({ title, price, extra, withDiscount }) => (
+  <div className={`total-info ${withDiscount ? 'discount' : false}`}>
     <TitleText>{ title }</TitleText>
     <div>
       <TitleText>{ price }</TitleText>

@@ -26,19 +26,34 @@ class App extends Component {
       isLoading: false
     })
   }
-  handleSelect(price, id, e) {
+  handleSelect(price, id, e, discount) {
     const quantity = e.target.value;
     this.setState(prevState => ({
       checkouts: {
         ...prevState.checkouts,
-        [id]: price * quantity
+        [id]: {
+          price,
+          quantity,
+          discount
+        }
       }
     }))
+  }
+  generateTotalValue(data, withDiscount = false) {
+    let values = [];
+    if (withDiscount) {
+      values = data.map(item => item.price * Number(item.quantity) - item.discount); 
+    } else {
+      values = data.map(item => item.price * Number(item.quantity)); 
+    }
+    return values.reduce((acc, act) => Number(acc + act), [0]);
+  }
+  getPaymentNode(node, strSearch) {
+    return node.filter(payment => payment.payment_type === strSearch)[0]
   }
   render() {
     const { tickets, isLoading } = this.state;
     const totalValues = Object.keys(this.state.checkouts).map(item => this.state.checkouts[item]);
-    const totalValue = totalValues.reduce((acc, act) => Number(acc + act), [0]);
     if (isLoading) {
       return <h1>Loading ...</h1>;
     }
@@ -46,10 +61,13 @@ class App extends Component {
       <div className="App">
         <TitleText>Selecionar ingressos</TitleText> 
         {tickets.nodes.map(type => {
+          // console.log(type);
           return type.batches.map(ticket => (
             <Card
               key={ticket.id}
               id={ticket.id}
+              discount={this.getPaymentNode(ticket.payment_methods, 'BANK_SLIP').due_service_fee}
+              taxes={this.getPaymentNode(ticket.payment_methods, 'CREDIT').due_service_fee}
               description={type.description}
               number={ticket.number}
               price={ticket.price}
@@ -61,8 +79,13 @@ class App extends Component {
         })}
         <TotalInfo
           title="Total sem desconto"
-          price={`R$ ${Number(totalValue / 100).toFixed(2)}`}
+          price={`R$ ${(this.generateTotalValue(totalValues) / 100).toFixed(2)}`}
           extra="em até 12x"
+        />
+        <TotalInfo
+          title="Total com desconto"
+          price={`R$ ${(this.generateTotalValue(totalValues, true) / 100).toFixed(2)}`}
+          withDiscount
         />
         <Button>
           Confirmar Compra
