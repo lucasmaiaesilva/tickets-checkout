@@ -46,7 +46,12 @@ class App extends Component {
     } else {
       values = data.map(item => item.price * Number(item.quantity)); 
     }
-    return values.reduce((acc, act) => Number(acc + act), [0]);
+    return values.reduce((acc, act) => {
+      if(act < 0) {
+        return 0;
+      }
+      return Number(acc + act);
+    }, [0]);
   }
   getPaymentNode(node, strSearch) {
     return node.filter(payment => payment.payment_type === strSearch)[0]
